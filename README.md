@@ -71,4 +71,10 @@ Note that this transaction hides the transaction diagram. The sender is hidden i
 
 5. creation of a test environment for zkdai
 
-To start off we need to install the ZoKrates framework. ZoKrates runs best inside a Docker container.
+To start off we need to install the ZoKrates framework. ZoKrates runs best inside a Docker container. Inside the ZoKrates folder run the following commands to start the docker container.
+
+docker build -t zokrates_tutorial . 
+mkdir code
+docker run -v $PWD/code:/home/zokrates/ZoKrates/target/debug/code -ti zokrates_tutorial /bin/bash
+cd ZoKrates/target/debug/
+
