@@ -1,0 +1,17 @@
+geth --networkid 77 --identity "MeineDevChain" --datadir "Flens-Arena" --nodiscover --rpc --rpcapi "db,eth,net,web3,personal,txpool" --rpccorsdomain "*" --mine --minerthreads 1 console 2>>priv-geth.log
+
+ admin.datadir
+
+admin.nodeInfo
+
+eth
+
+eth.getBlock( "latest" )
+
+miner.getHashrate()
+
+personal.listAccounts
+
+txpool.content
+
+web3
