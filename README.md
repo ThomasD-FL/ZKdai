@@ -68,3 +68,7 @@ Output a ZkDai note
 The ZkDai notes are output like UTXOs (Unspent Transaction Output). In order to transfer a certain value to a recipient, one selects some secret notes, the net value of which is at least equal to the value with which one would like to carry out the transactions. This value is sent to the recipient in the form of a new ZkDai note.
 
 Note that this transaction hides the transaction diagram. The sender is hidden in the sense that one could use a new eth address each time to perform a transaction that the zkp sends in the chain. Maan just needs to prove knowledge of "sk" which is the secret key corresponding to the public key that the note belongs to, i.e. H. A null proof of knowledge proves possession of a note, not the transactional sender. The recipient is always hidden because this information is encoded in the hash note.
+
+5. creation of a test environment for zkdai
+
+To start off we need to install the ZoKrates framework. ZoKrates runs best inside a Docker container.
